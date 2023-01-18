@@ -1,3 +1,4 @@
+
 class Solution {
   late int sumForNextRecursion;
   int recursiveAddDigits(int num) {
