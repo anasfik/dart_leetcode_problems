@@ -1,4 +1,4 @@
-import 'package:dart_leetcode_problems/add_digits/recursive_solution.dart';
+import 'package:dart_leetcode_problems/add_digits/solution.dart';
 import 'package:test/test.dart';
 
 void main() {
