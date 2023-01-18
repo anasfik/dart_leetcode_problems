@@ -1,6 +1,6 @@
 class Solution {
   late int sumForNextRecursion;
-  int addDigits(int num) {
+  int recursiveAddDigits(int num) {
     if (num < 10) {
       return num;
     }
@@ -12,6 +12,16 @@ class Solution {
       );
     }
 
-    return addDigits(sumForNextRecursion);
+    return recursiveAddDigits(sumForNextRecursion);
+  }
+
+  int constantTimeAddDigits(int num) {
+    if (num == 0) {
+      return 0;
+    } else if (num % 9 == 0) {
+      return 9;
+    } else {
+      return num % 9;
+    }
   }
 }
